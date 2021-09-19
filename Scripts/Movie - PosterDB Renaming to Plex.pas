@@ -6,10 +6,11 @@
 //           has then moves the file into that folder.
 
 var
-  BaseName: WideString;
+  BaseName, ExtName: WideString;
 
 begin
   BaseName := WideExtractBaseName(FileName);
+  ExtName := WideExtractFileExt(FileName);
 
-  FileName := BaseName + '\' + FileName
+  FileName := BaseName + '\poster' + ExtName
 end.
